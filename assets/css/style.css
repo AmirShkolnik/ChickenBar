@@ -129,7 +129,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-
+    background-color: black;
 }
 
 #specials {
@@ -263,23 +263,27 @@ body {
         height: 100px;
         display: flex;
         transition: all 0.1s;
+        justify-items: center;
+        align-items: center;
     }
 
     #navigation-bar {
         display:flex;
-            align-items: center;
-            flex-direction: column;
-            line-height: 1em;
-        
+        flex-direction: column-reverse;
     }
 
     #navigation-bar>li {
-        list-style-type: none;
-        text-align: right;
-        margin-left: auto;
+        
+        padding-left: 5em;
+        margin-right: auto;
         letter-spacing: 2px;
         line-height: 1.5em;
-    }
+        list-style-type: none;
+        align-items: center;
+       
+        
+ 
+}
 
 a {
     color: black;
