@@ -15,11 +15,12 @@ header {
     height: 100px;
 }
 
+
 #navigation-bar, #logo {
     line-height: 100px;
 }
 
-#logo {
+.logo {
     
     max-height: 100px;
     margin: 0 0.5rem;
@@ -35,23 +36,25 @@ a:hover #logo {
 
 /* Navigation Bar */
 
+nav {
+    border: 2px solid white;
+}
+
 #navigation-bar {
-    font-family: 'inter', sans-serif;
     font-size: 110%;
     letter-spacing: 4px;
- 
+    
 }
 
 #navigation-bar li {
-    font-family: 'inter', sans-serif;
     float: right;
     list-style-type: none;
     margin-right: 30px;
+  
 }
 
 #navigation-bar a {
     text-decoration: none;
-    font-family: 'inter', sans-serif;
     color: rgb(255, 192, 55);
 
 
@@ -256,57 +259,18 @@ body {
 
 /* For small screens size from 600px wide and down */
 @media screen and (max-width: 600px) {
-
-    #navigation-bar, #logo {
-        line-height: 50px;
-    }
-    
-   
-    #logo {
-        
-        max-height: 100px;
-        margin: 0 0.5rem;
-        float: left;
-    }
-    
-    a:hover #logo {
-    
-        transition: all 0.1s;
-        opacity: .8;
-    
-    }
     
     /* Navigation Bar */
-    
-    #navigation-bar {
-        font-family: 'inter', sans-serif;
-        font-size: auto;
-        display: flex;
-        flex-direction: column-reverse;
-
-    }
-    
+   
     #navigation-bar li {
-        font-family: 'inter', sans-serif;
+        
+        display: block;
         float: right;
         list-style-type: none;
-        
+        margin-right: 30px;
+       
     }
     
-    #navigation-bar a {
-        text-decoration: none;
-        font-family: 'inter', sans-serif;
-        color: rgb(255, 192, 55);
-    
-    }
-    
-    #navigation-bar a:hover {
-        font-size: 110%;
-        color: #000000;
-        background-color: rgba(255, 192, 55);
-        transition: all 0.1s;
-    
-    }
     h2 {
 
         color: black;
