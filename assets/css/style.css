@@ -27,7 +27,7 @@ header {
     float: left;
 }
 
-a:hover #logo {
+a:hover .logo {
 
     transition: all 0.1s;
     opacity: .8;
@@ -35,10 +35,6 @@ a:hover #logo {
 }
 
 /* Navigation Bar */
-
-nav {
-    border: 2px solid white;
-}
 
 #navigation-bar {
     font-size: 110%;
@@ -261,15 +257,38 @@ body {
 @media screen and (max-width: 600px) {
     
     /* Navigation Bar */
-   
-    #navigation-bar li {
-        
-        display: block;
-        float: right;
-        list-style-type: none;
-        margin-right: 30px;
-       
+
+    a>#head_img {
+
+        height: 100px;
+        display: flex;
+        transition: all 0.1s;
     }
+
+    #navigation-bar {
+        display:flex;
+            align-items: center;
+            flex-direction: column;
+            line-height: 1em;
+        
+    }
+
+    #navigation-bar>li {
+        list-style-type: none;
+        text-align: right;
+        margin-left: auto;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+    }
+
+a {
+    color: black;
+}
+
+ul>li>a:hover {
+    background-color: rgb(255, 192, 55);
+    color: black;
+}
     
     h2 {
 
