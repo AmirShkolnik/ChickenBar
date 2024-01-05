@@ -16,7 +16,7 @@ header {
 }
 
 
-#navigation-bar, #logo {
+#navigation-bar, #header_logo {
     line-height: 100px;
 }
 
@@ -117,7 +117,7 @@ h1 {
 #specials-header {
     height: 450px;
     width: 100%;
-    background: url("../images/bbq-chicken.jpg") no-repeat center center/cover;
+    background: url("../images/bbq-chicken.webp") no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -167,7 +167,7 @@ a>#img_days {
 
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    
 }
 
 #map div {
@@ -184,24 +184,27 @@ a>#img_days {
 
 #map>#map-1 {
 
-    background: url("../images/perfect-chicken-plate.jpg") no-repeat center center/cover;
+    background: url("../images/perfect-chicken-plate.webp") no-repeat center center/cover;
     padding: 20px;
 }
 
 #map>#map-2 {
 
-    background: url("../images/chicken-sandwich-2.jpg") no-repeat center center/cover;
+    background: url("../images/chicken-sandwich-2.webp") no-repeat center center/cover;
     padding: 20px;
 }
 
 #map>#map-3 {
+    
+    padding: 20px;
 
-    padding: 40px;
 }
 
 #map>#map-3>h2 {
 
     color: black;
+    padding-bottom: 5px;
+    
 }
 
 #map>#map-3>hr {
@@ -213,7 +216,7 @@ a>#img_days {
 #contact-header {
     height: 450px;
     width: 100%;
-    background: url("../images/chicken-plate.jpg") no-repeat center center/cover;
+    background: url("../images/chicken-plate.webp") no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -258,35 +261,18 @@ body {
     
     /* Navigation Bar */
 
-    a>#head_img {
-
-        height: 100px;
-        display: flex;
-        transition: all 0.1s;
-        justify-items: center;
-        align-items: center;
-    }
-
     #navigation-bar {
         display:flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        float: right;
     }
-
-    #navigation-bar>li {
-        
-        padding-left: 5em;
-        margin-right: auto;
-        letter-spacing: 2px;
-        line-height: 1.5em;
-        list-style-type: none;
-        align-items: center;
+     
+#navigation-bar>li {
        
-        
- 
-}
-
-a {
-    color: black;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    align-items: center;
+  
 }
 
 ul>li>a:hover {
@@ -323,18 +309,16 @@ ul>li>a:hover {
         flex-basis: 200px;
         flex-grow: 1;
         /* Creates a grid of meetup time divs over the background image */
-
     }
-
     #map>#map-1 {
 
         max-height: 200px;
-        ;
     }
 
     #map>#map-2 {
         max-height: 200px;
     }
+
 
     #social-networks {
         align-items: center;
