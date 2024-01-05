@@ -163,6 +163,12 @@ a>#img_days {
 
 }
 
+a>#img_days:hover {
+
+    opacity: .8;
+
+}
+
 #map {
 
     display: flex;
