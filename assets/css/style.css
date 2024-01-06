@@ -16,12 +16,13 @@ header {
 }
 
 
-#navigation-bar, #header_logo {
+#navigation-bar,
+#header_logo {
     line-height: 100px;
 }
 
 .logo {
-    
+
     max-height: 100px;
     max-width: 100%;
     margin: 0 0.5rem;
@@ -35,26 +36,24 @@ a:hover .logo {
 
 }
 
-/* Navigation Bar */
+/* Main Navigation Bar */
 
 #navigation-bar {
     font-size: 110%;
     letter-spacing: 4px;
-    
+
 }
 
 #navigation-bar li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
-  
+
 }
 
 #navigation-bar a {
     text-decoration: none;
     color: rgb(255, 192, 55);
-
-
 }
 
 #navigation-bar a:hover {
@@ -83,7 +82,7 @@ h1 {
     color: rgb(255, 192, 55);
     font-size: 10vw;
     box-shadow: 5px 0px 10px black;
-    background-color: rgb(0, 0, 0,.5);
+    background-color: rgb(0, 0, 0, .5);
     padding: 20px;
     width: 100%;
 }
@@ -92,7 +91,7 @@ h1 {
 
 #welcome {
 
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 10px;
 
@@ -115,7 +114,121 @@ h1 {
     color: white;
 }
 
-#specials-header {
+/* Menu Page Header Image */
+
+#chicken-menu {
+    height: 450px;
+    width: 100%;
+    background: url("../images/perfect-chicken-plate.webp") no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Menu Page Daily Dishes */
+
+#dishes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+}
+
+#days {
+
+    color: white;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+
+}
+
+#days>hr {
+
+    margin-top: 5px;
+
+}
+
+#days>h2,
+h3 {
+    color: rgba(255, 192, 55);
+    margin-bottom: 5px;
+}
+
+
+#days>a>#img_days {
+
+    max-height: 200px;
+    max-width: 200px;
+    transition: all 0.1s;
+
+}
+
+#days>a>#img_days:hover {
+
+    opacity: .8;
+
+}
+
+/* Menu Page Above the Footer Image */
+
+#menu-page {
+
+    background: url("../images/chicken-sandwich-2.webp") no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Home Page Above the Footer - Image and Google Map */
+
+#map {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#map div {
+
+    background-color: white;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+
+}
+
+#map>#map-left {
+
+    background: url("../images/perfect-chicken-plate.webp") no-repeat center center/cover;
+    padding: 20px;
+}
+
+#map>#map-right {
+
+    background-color: black;
+    padding: 20px;
+
+}
+
+#map>#map-right>hr {
+
+    border: 1px solid rgba(255, 192, 55);
+    ;
+
+}
+
+/* Order Online Page - Header Image */
+
+#order-online-header {
     height: 450px;
     width: 100%;
     background: url("../images/bbq-chicken.webp") no-repeat center center/cover;
@@ -126,105 +239,97 @@ h1 {
     justify-content: center;
 }
 
-#daily-specials {
+/* Order Online Page - Above the Footer - Order Form and Google Map*/
+
+#order-online {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    background-color: black;
+    background-color: rgba(0, 0, 0);
+
 }
 
-#specials {
+#order-online div {
 
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+
+}
+
+/* Order Online Page - Order Form */
+
+#order-form {
+
+    padding: 30px;
+}
+
+#order-form-left {
     color: white;
-    background-color: black;
-    padding: 15px;
-    text-align: center;
-    flex-basis: 200px;
-    flex-grow: 1;
-      
+    padding: 30px;
+    border: rgb(255, 192, 55) 2px solid;
+    text-align: left;
 
 }
 
-#specials>hr {
-
-    margin-top: 5px;
-
-}
-
-#specials>h2,h3 {
-color: rgba(255, 192, 55);
-    margin-bottom: 5px;
-}
-
-
-a>#img_days {
-
-    max-height: 200px;
-    max-width: 200px;
-    transition: all 0.1s;
+#order-form-left>h2 {
+    color: rgb(255, 192, 55);
 
 }
 
-a>#img_days:hover {
-
-    opacity: .8;
-
+.order-form-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 28px;
+    margin: 5px 0 20px 0;
+    border: 1px solid rgb(255, 192, 55);
+    border-radius: 2px;
+    padding: 0 5px;
 }
 
-#map {
-
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-#map div {
-
-    background-color: white;
-    text-align: center;
-    /* This will not wrap on screens of less than 400px wide.
-    Each div will expand to fill the available space on its row */
-    flex-basis: 200px;
-    flex-grow: 1;
-    /* Creates a grid of meetup time divs over the background image */
-    
-}
-
-#map>#map-1 {
-
-    background: url("../images/perfect-chicken-plate.webp") no-repeat center center/cover;
-    padding: 20px;
-}
-
-#map>#map-2 {
-
-    background: url("../images/chicken-sandwich-2.webp") no-repeat center center/cover;
-    padding: 20px;
-}
-
-#map>#map-3 {
-    
-    padding: 20px;
-
-}
-
-#map>#map-3>h2 {
-
+#order-form-left>button {
+    background-color: rgb(255, 192, 55);
     color: black;
-    padding-bottom: 5px;
-    
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 18px;
 }
 
-#map>#map-3>hr {
+#order-form-left>button:hover {
+    background-color: rgb(243, 190, 77);
+    transition: all 0.1s;
+    opacity: .8;
+}
 
+/* Order Online Page - Google Map*/
+
+#order-form-map {
+    padding: 30px;
+}
+
+#order-form-map>h2 {
+    color: rgb(255, 192, 55);
+
+}
+
+#order-form-map>hr {
     border: 1px solid rgb(255, 192, 55);
 
 }
 
-#contact-header {
+#dish {
+    height: 100px;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+/* Thank You Page - Header Image */
+
+#thank-you-header {
     height: 450px;
     width: 100%;
-    background: url("../images/chicken-plate.webp") no-repeat center center/cover;
+    background: url("../images/bbq-chicken.webp") no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -232,25 +337,20 @@ a>#img_days:hover {
     justify-content: center;
 }
 
-/* Footer */
-#social-networks {
-    background-color: black;
-    border-top: solid 10px rgba(255, 192, 55);
-    color: rgba(255, 192, 55);
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+#thank-you {
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+
 }
 
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
+.thank-you-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-/* General styles */
+/* Body */
 
 body {
     font-weight: 300;
@@ -258,39 +358,75 @@ body {
     font-family: 'inter', sans-serif;
 }
 
-/* For larger to medium screens size from 1200px wide and down */
-
-#nav-mobile {
-    display: none;
+html {
+    height: 100%
 }
+
+/* Footer */
+#contact-us {
+    background-color: black;
+    border-top: solid 10px rgb(255, 192, 55);
+    color: rgb(255, 192, 55);
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#contact-us li {
+    font-size: 110%;
+    padding: 5px;
+    color: rgb(255, 192, 55);
+    
+}
+
+#contact-us>#social-icons {
+    display: flex;
+    gap: 5px;
+    color: rgb(255, 192, 55);
+
+}
+
+.icons {
+    background-color: black;
+    color: rgb(255, 192, 55);
+    font-size: 30px;
+    width: 50px;
+}
+
+.icons:hover {
+    opacity: 0.7;
+}
+
+/* For larger to medium screens size from 1200px wide and down */
 
 /* For small screens size from 600px wide and down */
 @media screen and (max-width: 600px) {
-    
+
     /* Navigation Bar */
 
     #navigation-bar {
-        display:flex;
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
         float: right;
     }
-     
-#navigation-bar>li {
-       
-    letter-spacing: 2px;
-    line-height: 1.5em;
-    align-items: center;
-  
-}
 
-ul>li>a:hover {
-    background-color: rgb(255, 192, 55);
-    color: black;
-}
-    
+    #navigation-bar>li {
+
+        letter-spacing: 2px;
+        line-height: 1.5em;
+        align-items: center;
+
+    }
+
+    ul>li>a:hover {
+        background-color: rgb(255, 192, 55);
+        color: black;
+    }
+
     h2 {
 
-        color: black;
         font-size: 6vw;
 
     }
@@ -318,6 +454,7 @@ ul>li>a:hover {
         flex-grow: 1;
         /* Creates a grid of meetup time divs over the background image */
     }
+
     #map>#map-1 {
 
         max-height: 200px;
@@ -327,18 +464,18 @@ ul>li>a:hover {
         max-height: 200px;
     }
 
-
-    #social-networks {
+    #contact-us {
         align-items: center;
         flex-direction: column;
-        line-height: 1em;
+        line-height: 1.5em;
     }
 
-    #social-networks>#social-icons {
+    #contact-us>#social-icons {
         display: inline-flex;
         padding-top: 15px;
         gap: 5px;
         color: rgb(255, 192, 55);
 
     }
+
 }
