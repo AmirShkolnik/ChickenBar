@@ -190,6 +190,18 @@ h3 {
 
 /* Home Page Above the Footer - Image and Google Map */
 
+#map>#map-right-mobile {
+
+    display: none;
+ 
+ }
+ 
+ #map>#map-right-mobile>hr {
+ 
+     display: none;
+ 
+ }
+
 #map {
 
     display: flex;
