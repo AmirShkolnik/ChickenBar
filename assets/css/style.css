@@ -212,14 +212,14 @@ h3 {
     padding: 20px;
 }
 
-#map>#map-right {
+#map>#map-right-desktop {
 
     background-color: black;
     padding: 20px;
 
 }
 
-#map>#map-right>hr {
+#map>#map-right-desktop>hr {
 
     border: 1px solid rgba(255, 192, 55);
     ;
@@ -437,6 +437,18 @@ html {
         max-height: 200px;
     }
 
+    #map>#map-right-desktop {
+
+       display: none;
+    
+    }
+    
+    #map>#map-right-desktop>hr {
+    
+        display: none;
+    
+    }
+
     #map {
 
         flex-direction: column;
@@ -448,20 +460,21 @@ html {
         background-color: white;
         padding: 10px;
         text-align: center;
-        /* This will not wrap on screens of less than 400px wide.
-    Each div will expand to fill the available space on its row */
         flex-basis: 200px;
         flex-grow: 1;
-        /* Creates a grid of meetup time divs over the background image */
     }
 
-    #map>#map-1 {
+    #map>#map-right-mobile {
 
-        max-height: 200px;
+        background-color: black;
+        padding: 20px;
+    
     }
-
-    #map>#map-2 {
-        max-height: 200px;
+    
+    #map>#map-right-mobile>hr {
+    
+        border: 1px solid rgba(255, 192, 55);
+    
     }
 
     #contact-us {
