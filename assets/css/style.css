@@ -154,6 +154,21 @@ h1 {
     background-color: black;
 }
 
+.order-button {
+    background-color: rgb(255, 192, 55);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .order-button:hover {
+    opacity: .8;
+  }
+
 #days {
 
     color: white;
@@ -166,8 +181,9 @@ h1 {
 }
 
 #days>hr {
-
+border: 0.5px solid rgb(255, 192, 55);
     margin-top: 5px;
+    margin-bottom: 10px;
 
 }
 
@@ -209,8 +225,6 @@ h3 {
 /* Order Online Page - Above the Footer - Order Form and Google Map*/
 
 #order-online-header {
-    
-
         color: rgb(255, 192, 55);
         font-size: 7vw;
         box-shadow: 5px 0px 10px black;
@@ -473,7 +487,8 @@ html {
 
     #order-online-header {
 
-        padding: 0px;
+        padding-top: 10px;
+        
        
     
 }
